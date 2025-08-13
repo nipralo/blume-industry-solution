@@ -3,14 +3,25 @@ import HeroSection from '@/components/HeroSection';
 import FounderSection from '@/components/FounderSection';
 import PartnershipsSection from '@/components/PartnershipsSection';
 import Footer from '@/components/Footer';
+import { useRef } from 'react';
 
 const Index = () => {
+    const nextSectionRef = useRef(null);
+
+      const handleScroll = (e) => {
+  e.preventDefault();
+  
+  if (nextSectionRef.current) {
+    const topOffset = nextSectionRef.current.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  }
+};
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HeroSection />
-        <FounderSection />
+        <HeroSection handleScroll={handleScroll}/>
+        <FounderSection nextSectionRef={nextSectionRef}/>
         <PartnershipsSection />
       </main>
       <Footer />

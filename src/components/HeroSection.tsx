@@ -2,21 +2,22 @@ import pattern1 from "@/assets/pattern-3.png"
 import pattern2 from "@/assets/pattern-r-1.png"
 import pattern3 from "@/assets/pattern-4.png"
 
-const HeroSection = () => {
+const HeroSection = ({handleScroll}) => {
+   
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle/80 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0">
-        <div className="absolute top-8 left-8 lg:w-[400px]  md:opacity-20 opacity-0">
+        <div className="absolute top-8 left-8 lg:w-[400px]  lg:opacity-20 opacity-0">
           <img src={pattern1} alt="" className="w-full select-none"/>
         </div>
-        <div className="absolute bottom-8 rotate-90 left-8 lg:w-[400px]  md:opacity-20 opacity-0">
+        <div className="absolute bottom-8 rotate-90 left-8 lg:w-[400px]  lg:opacity-20 opacity-0">
           <img src={pattern1} alt="" className="w-full select-none"/>
         </div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 lg:w-[500px] opacity-20">
+        <div className="absolute lg:bottom-0 -bottom-14 right-0 w-96 h-96 lg:w-[500px] opacity-20">
           <img src={pattern2} alt="" className="w-full select-none"/>
         </div>
-        <div className="absolute top-[30%] left-[40%] translate-[-50%, -50%] w-96 h-96 lg:w-[700px] md:opacity-20 opacity-0">
+        <div className="absolute top-[30%] left-[40%] translate-[-50%, -50%] w-96 h-96 lg:w-[700px] 2xl:opacity-20 opacity-0">
           <img src={pattern3} alt="" className="w-full select-none"/>
         </div>
        
@@ -52,11 +53,11 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <button className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" onClick={handleScroll}>
         <div className="w-6 h-10 border-2 border-corporate-gray rounded-full flex justify-center">
           <div className="w-1 h-3 bg-corporate-gray rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </button>
     </section>
   );
 };

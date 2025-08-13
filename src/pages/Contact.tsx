@@ -183,16 +183,16 @@ const Contact = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 md:pt-36 md:pb-22 bg-gradient-subtle relative overflow-hidden">
+      <section className=" bg-background relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-8 left-8 lg:w-[400px]  md:opacity-20 opacity-0">
+          <div className="absolute top-8 left-8 lg:w-[400px]  lg:opacity-20 opacity-0">
             <img src={pattern1} alt="" className="w-full select-none" />
           </div>
-          <div className="absolute md:bottom-0 -bottom-20 right-0 w-96 h-96 lg:w-[500px] md:opacity-20 opacity-10">
+          <div className="absolute lg:bottom-0 -bottom-20 right-0 w-96 h-96 lg:w-[500px] md:opacity-20 opacity-10">
             <img src={pattern2} alt="" className="w-full select-none" />
           </div>
         </div>
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 lg:px-8 pt-44 pb-16 md:pt-44 md:pb-22">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-corporate animate-fade-in">
               Contact Us
@@ -207,7 +207,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Content */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-20 bg-muted relative overflow-hidden">
         <div className="absolute md:top-[30%] top-[65%]  right-0 lg:w-[45vw] md:opacity-20 opacity-40">
           <img
             src={pattern3}
@@ -357,12 +357,13 @@ const Contact = () => {
                       </h3>
                       <div className="space-y-1">
                         {info.details.map((detail, detailIndex) => (
-                          <p
+                          <a
+                          href={`mailto:${detail}`}
                             key={detailIndex}
                             className="text-sm text-corporate-gray"
                           >
                             {detail}
-                          </p>
+                          </a>
                         ))}
                       </div>
                     </div>

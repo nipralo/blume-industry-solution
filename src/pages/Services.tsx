@@ -38,12 +38,12 @@ const Services = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative py-20 bg-background overflow-hidden">
+        <section className="relative pt-24 pb-16 md:pb-22  bg-background overflow-hidden">
          <div className="absolute inset-0">
-          <div className="absolute top-8 left-8 lg:w-[400px]  md:opacity-20 opacity-0">
+          <div className="absolute top-8 left-8 lg:w-[400px]  lg:opacity-20 opacity-0">
             <img src={pattern1} alt="" className="w-full select-none" />
           </div>
-          <div className="absolute md:bottom-0 -bottom-20 right-0 w-96 h-96 lg:w-[500px] md:opacity-20 opacity-10">
+          <div className="absolute lg:bottom-0 -bottom-20 right-0 w-96 h-96 lg:w-[500px] md:opacity-20 opacity-10">
             <img src={pattern2} alt="" className="w-full select-none" />
           </div>
         </div>

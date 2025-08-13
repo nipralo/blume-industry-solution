@@ -1,8 +1,8 @@
 import founderImage from '@/assets/founder-meeting.jpg';
 
-const FounderSection = () => {
+const FounderSection = ({nextSectionRef}) => {
   return (
-    <section className="py-20 bg-gradient-subtle">
+    <section className="py-20 bg-gradient-subtle" ref={nextSectionRef}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid md:grid-cols-5 gap-12 md:gap-20 items-center">
           {/* Image */}

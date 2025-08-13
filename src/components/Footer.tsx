@@ -32,18 +32,26 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/industry-served"
+                  href="/industries"
                   className="hover:text-corporate-light transition-colors"
                 >
-                  Industry Served
+                  Industries
                 </a>
               </li>
               <li>
                 <a
-                  href="/solutions"
+                  href="/blume-space"
                   className="hover:text-corporate-light transition-colors"
                 >
-                  Solutions
+                  Blume Space
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  About
                 </a>
               </li>
               <li>
@@ -139,8 +147,8 @@ const Footer = () => {
             <h4 className="font-semibold text-corporate-light">Contact</h4>
             <div className="space-y-2 text-sm text-corporate-light/80">
               <p>United Arab Emirates</p>
-              <p>info@blumeind.com</p>
-              <p>+971 XX XXX XXXX</p>
+              <a href="mailto:info@blumeind.com" className="block hover:underline">info@blumeind.com</a>
+              <a href="tel:+971 XX XXX XXX" className="block hover:underline">+971 XX XXX XXXX</a>
             </div>
           </div>
         </div>
@@ -149,7 +157,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-corporate-light/80">
               © {currentYear} Blume Industry Solutions LLC. All rights reserved.
-              Design and Developed by{" "}
+              Designed and Developed by{" "}
               <a
                 href="https://nipralo.com/"
                 className="hover:text-corporate-light"
