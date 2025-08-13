@@ -1,0 +1,182 @@
+import logo from "@/assets/Blis_logo.png";
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-corporate text-corporate-light py-12">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="space-y-4 md:col-span-2">
+            {/* <div className="flex items-center space-x-3">
+              <img src={logo} alt="" className="h-16" />
+            </div> */}
+            <p className="text-sm text-corporate-light/80 leading-relaxed md:max-w-[70%]">
+              We empower industries by delivering innovative digital solutions
+              that transform operations, enhance user experiences, and unlock
+              sustainable growth.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-corporate-light">Quick Links</h4>
+            <ul className="space-y-2 text-sm text-corporate-light/80">
+              <li>
+                <a
+                  href="/"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/industry-served"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Industry Served
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/solutions"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Solutions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          {/* Services */}
+          {/* <div className="space-y-4">
+            <h4 className="font-semibold text-corporate-light">Services</h4>
+            <ul className="space-y-2 text-sm text-corporate-light/80">
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Digital Transformation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  AI Solutions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Custom Platforms
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Consulting
+                </a>
+              </li>
+            </ul>
+          </div> */}
+
+          {/* Industries */}
+          {/* <div className="space-y-4">
+            <h4 className="font-semibold text-corporate-light">Industries</h4>
+            <ul className="space-y-2 text-sm text-corporate-light/80">
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Healthcare
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Finance
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Manufacturing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-corporate-light transition-colors"
+                >
+                  Retail
+                </a>
+              </li>
+            </ul>
+          </div> */}
+
+          {/* Contact */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-corporate-light">Contact</h4>
+            <div className="space-y-2 text-sm text-corporate-light/80">
+              <p>United Arab Emirates</p>
+              <p>info@blumeind.com</p>
+              <p>+971 XX XXX XXXX</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-corporate-light/20">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-corporate-light/80">
+              © {currentYear} Blume Industry Solutions LLC. All rights reserved.
+              Design and Developed by{" "}
+              <a
+                href="https://nipralo.com/"
+                className="hover:text-corporate-light"
+                target="_blank"
+              >
+                Nipralo Technologies
+              </a>
+            </p>
+            <div className="flex space-x-6 text-sm text-corporate-light/80">
+              <a
+                href="#"
+                className="hover:text-corporate-light transition-colors"
+              >
+                Privacy Policy
+              </a>
+              {/* <a
+                href="#"
+                className="hover:text-corporate-light transition-colors"
+              >
+                Terms of Service
+              </a> */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
