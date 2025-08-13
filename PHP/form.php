@@ -48,7 +48,8 @@ if (!$data) {
 
 $name    = htmlspecialchars(trim($data['name'] ?? ''));
 $email   = filter_var(trim($data['email'] ?? ''), FILTER_SANITIZE_EMAIL);
-$message = htmlspecialchars(trim($data['message'] ?? ''));
+// $message = htmlspecialchars(trim($data['message'] ?? ''));
+$message = trim($data['message'] ?? '');
 
 // Basic Validation
 if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {

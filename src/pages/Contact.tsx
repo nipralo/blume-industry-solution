@@ -30,9 +30,8 @@ const Contact = () => {
   // Regex patterns
   const emailRegex =
     /^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  const phoneRegex = /^\d{10}$/;
+const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
   const nameRegex = /^[a-zA-Z\s'-]+$/;
-  const cityRegex = /^[a-zA-Z\s'-]+$/;
 
   const validateField = (name, value) => {
     switch (name) {
@@ -46,6 +45,8 @@ const Contact = () => {
         return "";
       case "message":
         if (!value.trim()) return "Message is required";
+        if (!messageRegex.test(value)) 
+        return "Message must be only Alphabet, Number, @, $, &, -, +";
         if (value.length < 10) return "Message must be at least 10 characters";
         if (value.length > 200) return "Message must be under 200 characters";
         return "";
