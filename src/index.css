@@ -43,6 +43,7 @@ All colors MUST be HSL.
     --corporate-light: 0 0% 98%;
     --corporate-gray: 0 0% 45%;
     --corporate-border: 0 0% 85%;
+    --corporate-gray-100: 255 0 0;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 15%), hsl(0 0% 25%));
@@ -135,4 +136,12 @@ body, html {
 }
 h1, h2, h3, p {
   font-family: "Ubuntu", sans-serif !important;
+}
+.number-watermark {
+  font-size: 300px;
+  opacity: 0.08;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
 }

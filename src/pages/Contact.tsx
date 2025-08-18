@@ -195,7 +195,7 @@ const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
         </div>
         <div className="container mx-auto px-4 lg:px-8 pt-44 pb-16 md:pt-44 md:pb-22">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold text-corporate animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold text-[rgb(74_74_74)] animate-fade-in">
               Contact Us
             </h1>
             <p className="text-lg md:text-xl text-corporate-gray leading-relaxed animate-fade-in [animation-delay:200ms]">

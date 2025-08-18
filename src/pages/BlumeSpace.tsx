@@ -64,7 +64,7 @@ const BlumeSpace = () => {
           </div>
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto animate-fade-in">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-corporate mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[rgb(74_74_74)] mb-6">
                 Blume Space
               </h1>
               <h2 className="text-2xl md:text-3xl text-corporate-gray mb-8">
@@ -176,7 +176,7 @@ const BlumeSpace = () => {
               </p> */}
               <Button
                 size="lg"
-                className="bg-corporate hover:bg-corporate/90 text-corporate-light"
+                className="bg-[rgb(74_74_74)] hover:bg-[rgb(74_74_74)]/90 text-corporate-light"
                 onClick={() => window.open("https://blume.space", "_blank")}
               >
                 Learn More <ExternalLink className="w-4 h-4 ml-2" />

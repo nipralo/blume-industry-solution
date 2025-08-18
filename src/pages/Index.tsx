@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import FounderSection from '@/components/FounderSection';
 import PartnershipsSection from '@/components/PartnershipsSection';
+import BlumeInfographic from '@/components/BlumeInfographic';
 import Footer from '@/components/Footer';
 import { useRef } from 'react';
 
@@ -23,6 +24,7 @@ const Index = () => {
         <HeroSection handleScroll={handleScroll}/>
         <FounderSection nextSectionRef={nextSectionRef}/>
         <PartnershipsSection />
+        <BlumeInfographic />
       </main>
       <Footer />
     </div>
