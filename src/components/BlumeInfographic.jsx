@@ -44,7 +44,7 @@ const BlumeInfographic = () => {
                 diverse environments where Blume Industry Solutions operates to
                 unify digital progress.
               </p>
-              <p className="number-watermark">1</p>
+              <p className="number-watermark select-none">1</p>
             </div>
 
             {/* Section 2: Blume Digital Layer (Center) */}
@@ -55,7 +55,7 @@ const BlumeInfographic = () => {
                 Blume Industry Solutions is the core digital layer connecting
                 industry parts to streamline transformation and innovation.
               </p>
-                <p className="number-watermark" style={{opacity: 0.2}}>2</p>
+                <p className="number-watermark select-none" style={{opacity: 0.2}}>2</p>
             </div>
 
             {/* Section 3: Achieving Unified Industry Digitisation */}
@@ -70,7 +70,7 @@ const BlumeInfographic = () => {
                 efficiency, growth, and the adoption of cutting-edge
                 technologies across sectors.
               </p>
-                <p className="number-watermark ">3</p>
+                <p className="number-watermark select-none">3</p>
             </div>
           </div>
         </div>
