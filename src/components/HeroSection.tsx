@@ -9,16 +9,16 @@ const HeroSection = ({handleScroll}) => {
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-8 left-8 lg:w-[400px]  lg:opacity-20 opacity-0">
-          <img src={pattern1} alt="" className="w-full select-none"/>
+          <img src={pattern1} alt="" className="w-full select-none xl:max-h-[40vh]"/>
         </div>
-        <div className="absolute bottom-8 rotate-90 left-8 lg:w-[400px]  lg:opacity-20 opacity-0">
-          <img src={pattern1} alt="" className="w-full select-none"/>
+        <div className="absolute bottom-8 rotate-90 left-8 lg:w-[400px]  xl:opacity-20 opacity-0">
+          <img src={pattern1} alt="" className="w-full select-none xl:max-h-[40vh]"/>
         </div>
         <div className="absolute lg:bottom-0 -bottom-14 right-0 w-96 h-96 lg:w-[500px] opacity-20">
           <img src={pattern2} alt="" className="w-full select-none"/>
         </div>
-        <div className="absolute top-[30%] left-[40%] translate-[-50%, -50%] w-96 h-96 lg:w-[700px] 2xl:opacity-20 opacity-0">
-          <img src={pattern3} alt="" className="w-full select-none"/>
+        <div className="absolute top-[30%] left-[50%] translate-x-[-50%] w-96 h-96 lg:w-[700px] 2xl:opacity-20 opacity-0">
+          <img src={pattern3} alt="" className="w-full select-none xl:max-w-[40vw]"/>
         </div>
        
       </div>
@@ -26,7 +26,7 @@ const HeroSection = ({handleScroll}) => {
       <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-[600] text-corporate leading-tight animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-[600] text-[rgb(74_74_74)] leading-tight animate-fade-in">
             We Empower Industries
           </h1>
           
@@ -37,15 +37,15 @@ const HeroSection = ({handleScroll}) => {
 
           {/* CTA Section */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12 animate-fade-in [animation-delay:400ms]">
-            <a
+            {/* <a
               href="/industries"
               className="px-8 py-3 bg-corporate border-2 border-corporate text-corporate-light font-medium rounded-2xl hover:bg-corporate/90 transition-all duration-300 shadow-soft hover:shadow-medium"
             >
               Our Services
-            </a>
+            </a> */}
             <a
             href="/contact"
-             className="px-8 py-3 border-2 border-corporate text-corporate font-medium rounded-2xl hover:bg-corporate hover:text-corporate-light transition-all duration-300">
+             className="px-8 py-3 border-2 border-corporate text-corporate font-medium rounded-2xl hover:bg-[rgb(74_74_74)] hover:text-corporate-light transition-all duration-300">
               Get in Touch
             </a>
           </div>

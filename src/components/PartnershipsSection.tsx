@@ -18,7 +18,7 @@ const PartnershipsSection = () => {
                 By establishing partnerships with industry leading brands from
                 various industries, we strive towards delivering robust,
                 efficient digital solutions tailored to our client's
-                needs-ensuring quality, reliability, and seamless integrations
+                needs ensuring quality, reliability, and seamless integrations
                 every time.
               </p>
 

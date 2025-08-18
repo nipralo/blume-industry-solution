@@ -15,6 +15,10 @@ const BlumeSpace = () => {
         "Real-time property insights and occupancy tracking",
         "Streamlined lease management and payment reconciliation",
         "Enhanced tenant satisfaction through proactive service delivery",
+        "Verified and Ranked Profiles",
+        "Interaction history Reports",
+        "Financial Reports",
+        "and more"
       ],
     },
     {
@@ -24,6 +28,10 @@ const BlumeSpace = () => {
         "Transparent billing and service history",
         "Direct communication with landlords and support teams",
         "Private, secure access to all property-related data",
+         "Verified and Ranked Profiles",
+        "Interaction history Reports",
+        "Financial Reports",
+        "and more"
       ],
     },
 
@@ -34,6 +42,8 @@ const BlumeSpace = () => {
         "Real-time project insights and payment tracking",
         "Streamlined project management and payment scheduling",
         "Enhanced investor satisfaction through proactive service delivery",
+         "Pre and post handover investor dashboard",
+        "and more"
       ],
     },
   ];

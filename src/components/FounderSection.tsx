@@ -1,6 +1,6 @@
-import founderImage from '@/assets/founder-meeting.jpg';
+import founderImage from "@/assets/founder-meeting.jpg";
 
-const FounderSection = ({nextSectionRef}) => {
+const FounderSection = ({ nextSectionRef }) => {
   return (
     <section className="py-20 bg-gradient-subtle" ref={nextSectionRef}>
       <div className="container mx-auto px-4 lg:px-8">
@@ -20,23 +20,39 @@ const FounderSection = ({nextSectionRef}) => {
           {/* Content */}
           <div className="space-y-6 animate-slide-in-right md:col-span-3">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-corporate mb-4">
-                Founder's Statement
-              </h2>
-              <h3 className="text-xl font-semibold text-corporate-gray mb-6">
+              <div className="flex items-end gap-4 mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-corporate">
+                  Founder's Statement,
+                </h2>
+                <p className="text-xl font-semibold text-[rgb(74_74_74)] h-full mb-0">
+                  Gaurav Kanchan
+                </p>
+              </div>
+              {/* <h3 className="text-xl font-semibold text-corporate-gray mb-6">
                 Gaurav Kanchan
-              </h3>
+              </h3> */}
             </div>
 
             <blockquote className="relative">
-              <div className="absolute -top-4 -left-4 text-6xl text-corporate/20">"</div>
+              <div className="absolute -top-4 -left-4 text-6xl text-corporate/20">
+                "
+              </div>
               <p className="text-lg text-corporate-gray leading-relaxed pl-8 italic">
-                Blume Industry Solutions LLC was founded on the belief that technology and AI should amplify human potential, not replace it. Our team of experts blends industry knowledge with efficient development practices to deliver platforms that are both powerful and intuitive.
+                Blume Industry Solutions LLC was founded on the belief that
+                technology and AI should amplify human potential, not replace
+                it. Our team of experts blends industry knowledge with efficient
+                development practices to deliver platforms that are both
+                powerful and intuitive.
               </p>
               <p className="text-lg text-corporate-gray leading-relaxed pl-8 italic mt-4">
-               We focus on creating digital ecosystems that support transparency, flexibility, and seamless experiences. With headquarters in the UAE, we aim serve clients across the region and to extend our services beyond.
+                We focus on creating digital ecosystems that support
+                transparency, flexibility, and seamless experiences. With
+                headquarters in the UAE, we aim serve clients across the region
+                and to extend our services beyond.
               </p>
-              <div className="absolute -bottom-4 -right-4 text-6xl text-corporate/20">"</div>
+              <div className="absolute -bottom-4 -right-4 text-6xl text-corporate/20">
+                "
+              </div>
             </blockquote>
 
             <div className="pt-6">

@@ -5,8 +5,10 @@ import { Building2, Shield, TrendingUp } from 'lucide-react';
 import pattern1 from "@/assets/pattern-3.png";
 import pattern2 from "@/assets/pattern-r-1.png";
 import Insurance from "@/assets/insurance.avif";
-import Management from "@/assets/Management Consultancy.avif";
-import RealEstate from "@/assets/Real Estate.avif";
+import Management from "@/assets/Management-Consultancy.avif";
+import RealEstate from "@/assets/dubai-skylines.jpg";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Services = () => {
   const services = [
@@ -49,7 +51,7 @@ const Services = () => {
         </div>
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto animate-fade-in">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-corporate mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[rgb(74_74_74)] mb-6">
                 Industry Solutions
               </h1>
               <p className="text-xl md:text-2xl text-corporate-gray leading-relaxed mb-8">
@@ -88,9 +90,9 @@ const Services = () => {
                         <img src={service.image} alt={service.title} />
                       </div>
                     </div>
-                    <p className="text-corporate-gray leading-relaxed">
+                    {!service.flag ? <p className="text-corporate-gray leading-relaxed">
                       {service.description}
-                    </p>
+                    </p> : <Skeleton count={5} />}
                   </CardContent>
                 </Card>
               ))}
