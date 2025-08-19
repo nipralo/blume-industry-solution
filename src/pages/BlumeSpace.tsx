@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Building, TrendingUp, ExternalLink } from "lucide-react";
 import pattern1 from "@/assets/pattern-3.png";
 import pattern2 from "@/assets/pattern-r-1.png";
+import blumeSpaceLogo from "@/assets/Blume Space logo.png"
 
 const BlumeSpace = () => {
   const benefits = [
@@ -62,9 +63,10 @@ const BlumeSpace = () => {
           </div>
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto animate-fade-in">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[rgb(74_74_74)] mb-6">
+              {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[rgb(74_74_74)] mb-6">
                 Blume Space
-              </h1>
+              </h1> */}
+              <img src={blumeSpaceLogo} alt="Blume Space Logo" className="w-96 mx-auto mb-6"/>
               <h2 className="text-2xl md:text-3xl text-corporate-gray mb-8">
                 UAE's first communication and property management platform.
               </h2>
