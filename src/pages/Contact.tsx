@@ -21,6 +21,7 @@ const baseURL = window.location.hostname.includes("localhost")
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    phone: "",
     email: "",
     message: "",
   });
@@ -32,12 +33,17 @@ const Contact = () => {
     /^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
   const nameRegex = /^[a-zA-Z\s'-]+$/;
+const phoneRegex = /^\+?[1-9]\d{1,14}$/;
 
   const validateField = (name, value) => {
     switch (name) {
       case "name":
         if (!value.trim()) return "Name is required";
         if (!nameRegex.test(value)) return "Name must be valid";
+        return "";
+      case "phone":
+        if (!value.trim()) return "Phone Number is required";
+        if (!phoneRegex.test(value)) return "Phone Number must be valid";
         return "";
       case "email":
         if (!value.trim()) return "Email is required";
@@ -122,6 +128,7 @@ const Contact = () => {
 
         setFormData({
           name: "",
+          phone: "",
           email: "",
           message: "",
         });
@@ -168,12 +175,12 @@ const Contact = () => {
         // "sales@blumeind.com",
       ],
     },
-    {
-      icon: Phone,
-      title: "Phone Number",
-      href: "tel",
-      details: ["+91 XX XXX XXXX"],
-    },
+    // {
+    //   icon: Phone,
+    //   title: "Phone Number",
+    //   href: "tel",
+    //   details: ["+91 XX XXX XXXX"],
+    // },
   ];
 
   return (
@@ -233,8 +240,7 @@ const Contact = () => {
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-2">
-                  <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-4">
-                    <div className="space-y-1 lg:flex-1">
+                   <div className="space-y-1 lg:flex-1">
                       <Label
                         htmlFor="name"
                         className="text-corporate font-medium"
@@ -258,6 +264,34 @@ const Contact = () => {
                       {errors.name && (
                         <p className="mt-1 text-sm text-red-500">
                           {errors.name}
+                        </p>
+                      )}
+                    </div>
+                  <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-4">
+                    <div className="space-y-1 lg:flex-1">
+                      <Label
+                        htmlFor="number"
+                        className="text-corporate font-medium"
+                      >
+                        Phone *
+                      </Label>
+                      <Input
+                        id="phone"
+                        name="phone"
+                        type="text"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        required
+                        className={`focus:border-corporate ${
+                          errors.phone
+                            ? "border-red-500"
+                            : "border-corporate-border"
+                        }`}
+                        placeholder="Enter your phone number"
+                      />
+                      {errors.phone && (
+                        <p className="mt-1 text-sm text-red-500">
+                          {errors.phone}
                         </p>
                       )}
                     </div>

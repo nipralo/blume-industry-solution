@@ -15,8 +15,7 @@ const PartnershipsSection = () => {
 
             <div className="space-y-4">
               <p className="text-lg text-corporate-gray leading-relaxed">
-                By establishing partnerships with industry leading brands from
-                various industries, we strive towards delivering robust,
+                By establishing partnerships with leading brands from various industries, we strive towards delivering robust,
                 efficient digital solutions tailored to our client's
                 needs ensuring quality, reliability, and seamless integrations
                 every time.

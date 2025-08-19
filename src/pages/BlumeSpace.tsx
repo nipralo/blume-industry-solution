@@ -145,7 +145,7 @@ const BlumeSpace = () => {
                         </li>
                       ))}
                     </ul>
-                  <p className="text-corporate-gray leading-relaxed mt-2">And More</p>
+                  <p className="text-corporate-gray leading-relaxed mt-2">And More...</p>
                   </CardContent>
                 </Card>
               ))}

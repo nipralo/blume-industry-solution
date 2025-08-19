@@ -106,7 +106,7 @@ const Services = () => {
                         <img src={service.image} alt={service.title} />
                       </div>
                     </div>
-                    {!service.flag ? <p className="text-corporate-gray leading-relaxed">
+                    {service.description ? <p className="text-corporate-gray leading-relaxed">
                       {service.description}
                     </p> : <Skeleton count={5} />}
                   </CardContent>
