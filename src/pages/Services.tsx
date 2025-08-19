@@ -1,12 +1,14 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Building2, Shield, TrendingUp } from 'lucide-react';
+import { Building2, GraduationCap, Plane, Shield, TicketsPlane, TrendingUp } from 'lucide-react';
 import pattern1 from "@/assets/pattern-3.png";
 import pattern2 from "@/assets/pattern-r-1.png";
 import Insurance from "@/assets/insurance.avif";
 import Management from "@/assets/Management-Consultancy.avif";
-import RealEstate from "@/assets/dubai-skylines.jpg";
+import RealEstate from "@/assets/skylines.jpeg";
+import aviation from "@/assets/Education-Aviation.jpeg";
+import education from "@/assets/BachelorDegrees.jpeg";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
@@ -31,6 +33,20 @@ const Services = () => {
       title: "Management Consultancy",
       description: "Harness the power of data to make intelligent decisions. Our solutions streamline consultancy processes, identify opportunities, and empower data-driven growth for your business.",
       image: Management,
+      flag: "Coming Soon"
+    },
+    {
+      icon: GraduationCap,
+      title: "Education",
+      description: "",
+      image: education,
+      flag: "Coming Soon"
+    },
+    {
+      icon: Plane,
+      title: "Aviation",
+      description: "",
+      image: aviation,
       flag: "Coming Soon"
     },
   ];

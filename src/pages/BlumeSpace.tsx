@@ -12,26 +12,25 @@ const BlumeSpace = () => {
       icon: Building,
       title: "Landlords & Property Managers",
       features: [
-        "Real-time property insights and occupancy tracking",
-        "Streamlined lease management and payment reconciliation",
-        "Enhanced tenant satisfaction through proactive service delivery",
         "Verified and Ranked Profiles",
-        "Interaction history Reports",
+        "Real-time property insights and occupancy tracking",
+        "Occupancy Tracking",
+        "Streamlined lease management and payment reconciliation",
+        "Payment tracking",
         "Financial Reports",
-        "and more"
+        "Interaction History Reports",
       ],
     },
     {
       icon: Users,
       title: "Tenants",
       features: [
+        "Verified and Ranked Profiles",
         "Transparent billing and service history",
+        "Service history reports",
         "Direct communication with landlords and support teams",
-        "Private, secure access to all property-related data",
-         "Verified and Ranked Profiles",
-        "Interaction history Reports",
         "Financial Reports",
-        "and more"
+        "Interaction History Reports",
       ],
     },
 
@@ -39,11 +38,10 @@ const BlumeSpace = () => {
       icon: TrendingUp,
       title: "Real Estate Developers",
       features: [
-        "Real-time project insights and payment tracking",
+        "Pre and Post handover investor dashboard",
+        "Real-time project insights and payment scheduling",
+        "Proactive service delivery dashboard",
         "Streamlined project management and payment scheduling",
-        "Enhanced investor satisfaction through proactive service delivery",
-         "Pre and post handover investor dashboard",
-        "and more"
       ],
     },
   ];
@@ -145,6 +143,7 @@ const BlumeSpace = () => {
                         </li>
                       ))}
                     </ul>
+                  <p className="text-corporate-gray leading-relaxed mt-2">And More</p>
                   </CardContent>
                 </Card>
               ))}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Send, MessageSquare } from "lucide-react";
+import { Mail, Send, MessageSquare, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -30,7 +30,7 @@ const Contact = () => {
   // Regex patterns
   const emailRegex =
     /^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
+  const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
   const nameRegex = /^[a-zA-Z\s'-]+$/;
 
   const validateField = (name, value) => {
@@ -45,8 +45,8 @@ const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
         return "";
       case "message":
         if (!value.trim()) return "Message is required";
-        if (!messageRegex.test(value)) 
-        return "Message must be only Alphabet, Number, @, $, &, -, +";
+        if (!messageRegex.test(value))
+          return "Message must be only Alphabet, Number, @, $, &, -, +";
         if (value.length < 10) return "Message must be at least 10 characters";
         if (value.length > 200) return "Message must be under 200 characters";
         return "";
@@ -161,21 +161,19 @@ const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
     {
       icon: Mail,
       title: "Email Address",
+      href: "mailto",
       details: [
         "info@blumeind.com",
         // "support@blumeind.com",
         // "sales@blumeind.com",
       ],
     },
-    // {
-    //   icon: Phone,
-    //   title: "Phone Number",
-    //   details: [
-    //     "+971 XX XXX XXXX",
-    //     "+971 XX XXX XXXX",
-    //     "Monday - Friday, 9AM - 6PM",
-    //   ],
-    // },
+    {
+      icon: Phone,
+      title: "Phone Number",
+      href: "tel",
+      details: ["+91 XX XXX XXXX"],
+    },
   ];
 
   return (
@@ -279,8 +277,10 @@ const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
                         onChange={handleChange}
                         required
                         className={`focus:border-corporate ${
-                      errors.email ? "border-red-500" : "border-corporate-border"
-                    }`}
+                          errors.email
+                            ? "border-red-500"
+                            : "border-corporate-border"
+                        }`}
                         placeholder="Enter your email address"
                       />
                       {errors.email && (
@@ -302,19 +302,21 @@ const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
                       id="message"
                       name="message"
                       value={formData.message}
-                    onChange={handleChange}
+                      onChange={handleChange}
                       required
                       rows={3}
                       className={`focus:border-corporate resize-none ${
-                      errors.message ? "border-red-500" : "border-corporate-border"
-                    }`}
+                        errors.message
+                          ? "border-red-500"
+                          : "border-corporate-border"
+                      }`}
                       placeholder="Tell us about your project or inquiry..."
                     />
                     {errors.message && (
-                        <p className="mt-1 text-sm text-red-500">
-                          {errors.message}
-                        </p>
-                      )}
+                      <p className="mt-1 text-sm text-red-500">
+                        {errors.message}
+                      </p>
+                    )}
                   </div>
 
                   <Button
@@ -353,20 +355,33 @@ const messageRegex = /^[a-zA-Z0-9@\$&\-\+\s]+$/;
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-corporate mb-2">
+                      <h3 className="font-semibold text-corporate mb-0.5">
                         {info.title}
                       </h3>
-                      <div className="space-y-1">
-                        {info.details.map((detail, detailIndex) => (
-                          <a
-                          href={`mailto:${detail}`}
-                            key={detailIndex}
-                            className="text-sm text-corporate-gray"
-                          >
-                            {detail}
-                          </a>
-                        ))}
-                      </div>
+                      {info.href ? (
+                        <div className="space-y-1">
+                          {info.details.map((detail, detailIndex) => (
+                            <a
+                              href={`${info.href}:${detail}`}
+                              key={detailIndex}
+                              className="text-sm text-corporate-gray"
+                            >
+                              {detail}
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="space-y-1">
+                          {info.details.map((detail, detailIndex) => (
+                            <p
+                              key={detailIndex}
+                              className="text-sm text-corporate-gray"
+                            >
+                              {detail}
+                            </p>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}
