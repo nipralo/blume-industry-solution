@@ -18,12 +18,12 @@ const About = () => {
       description:
         "To be the leading provider of user-centric digital ecosystems that transform how businesses and consumers interact in the digital world.",
     },
-    {
-      icon: Users,
-      title: "Our Team",
-      description:
-        "A diverse group of experts blending industry knowledge with efficient development practices to deliver powerful and intuitive platforms.",
-    },
+    // {
+    //   icon: Users,
+    //   title: "Our Team",
+    //   description:
+    //     "A diverse group of experts blending industry knowledge with efficient development practices to deliver powerful and intuitive platforms.",
+    // },
     // {
     //   icon: Globe,
     //   title: "Our Reach",
@@ -90,7 +90,7 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-corporate mb-12 text-center animate-fade-in">
               What Drives Us
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {values.map((value, index) => (
                 <Card
                   key={index}
