@@ -10,7 +10,7 @@ const FounderSection = ({ nextSectionRef }) => {
             <div className="relative overflow-hidden rounded-lg shadow-large">
               <img
                 src={founderImage}
-                alt="Founder's Statement - Team Meeting"
+                alt="Founder & Director"
                 className="w-full h-[400px] object-cover transition-transform duration-500 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-corporate/20 to-transparent"></div>
@@ -22,7 +22,7 @@ const FounderSection = ({ nextSectionRef }) => {
             <div>
               <div className="flex items-end gap-4 mb-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-corporate">
-                  Founder's Statement,
+                  Founder & Director,
                 </h2>
                 <p className="text-xl font-semibold text-[rgb(74_74_74)] h-full mb-0">
                   Gaurav Kanchan

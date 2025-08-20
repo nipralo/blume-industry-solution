@@ -38,14 +38,14 @@ const Services = () => {
     {
       icon: GraduationCap,
       title: "Education",
-      description: "",
+      description: "Blume Education Suite is currently in its ideation phase, where core concepts, stakeholder needs, and strategic frameworks are being actively shaped to build a transformative digital foundation for the UAE’s education sector.",
       image: education,
       flag: "Coming Soon"
     },
     {
       icon: Plane,
       title: "Aviation",
-      description: "",
+      description: "Currently in the ideation phase, this is a work-in-progress solution aimed at bridging operational silos and enhancing transparency, modularity, and regulatory alignment for airlines, airports, and aviation authorities.",
       image: aviation,
       flag: "Coming Soon"
     },
