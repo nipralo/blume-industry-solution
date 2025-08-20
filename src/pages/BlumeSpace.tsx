@@ -95,7 +95,7 @@ const BlumeSpace = () => {
                 Why Us?
               </h2>
               <p className="text-lg text-corporate-gray leading-relaxed text-center animate-slide-in-right">
-                Blume Space isn’t just another property management platform-it’s
+                Blume Space isn’t just another property management platform, it’s
                 a transformative digital experience built for transparency,
                 control, and convenience in the UAE residential real estate
                 sector. Whether you’re a tenant, landlord, real estate developer

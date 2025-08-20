@@ -22,7 +22,7 @@ const FounderSection = ({ nextSectionRef }) => {
             <div>
               <div className="flex items-end gap-4 mb-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-corporate">
-                  Founder & Director,
+                  Founder's Statement,
                 </h2>
                 <p className="text-xl font-semibold text-[rgb(74_74_74)] h-full mb-0">
                   Gaurav Kanchan
@@ -59,7 +59,7 @@ const FounderSection = ({ nextSectionRef }) => {
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-0.5 bg-corporate-gray"></div>
                 <span className="text-sm text-corporate-gray font-medium">
-                  Founder & CEO
+                 Founder & Director
                 </span>
               </div>
             </div>
