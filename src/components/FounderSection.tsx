@@ -40,7 +40,7 @@ const FounderSection = ({ nextSectionRef }) => {
               <p className="text-lg text-corporate-gray leading-relaxed pl-8 italic">
                 Blume Industry Solutions LLC was founded on the belief that
                 technology and AI should amplify human potential, not replace
-                it. Our team of experts blends industry knowledge with efficient
+                it. We blend industry knowledge with efficient
                 development practices to deliver platforms that are both
                 powerful and intuitive.
               </p>
