@@ -121,8 +121,9 @@ const Footer = () => {
                 className="hover:text-corporate-light"
                 target="_blank"
               >
-                Nipralo Technologies
+                Nipralo
               </a>
+              .
             </p>
             <div className="text-sm text-corporate-light/80">
               {/* <a
