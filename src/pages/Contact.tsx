@@ -170,9 +170,7 @@ const phoneRegex = /^\+?[1-9]\d{1,14}$/;
       title: "Email Address",
       href: "mailto",
       details: [
-        "info@blumeind.com",
-        // "support@blumeind.com",
-        // "sales@blumeind.com",
+        "info@blis.ae",
       ],
     },
     // {

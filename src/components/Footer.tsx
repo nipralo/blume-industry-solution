@@ -63,7 +63,7 @@ const Footer = () => {
             <h4 className="font-semibold text-corporate-light">Contact</h4>
             <div className="space-y-2 text-sm text-corporate-light/80">
               <p>United Arab Emirates</p>
-              <a href="mailto:info@blumeind.com" className="block hover:underline">info@blumeind.com</a>
+              <a href="mailto:info@blis.ae" className="block hover:underline">info@blis.ae</a>
               <a href="tel:+971 XX XXX XXX" className="block hover:underline">+971 XX XXX XXXX</a>
             </div>
           </div>
