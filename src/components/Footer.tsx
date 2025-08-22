@@ -125,12 +125,12 @@ const Footer = () => {
               </a>
             </p>
             <div className="text-sm text-corporate-light/80">
-              <a
+              {/* <a
                 href="#"
                 className="hover:text-corporate-light transition-colors"
               >
                 Privacy Policy
-              </a>
+              </a> */}
               {/* <a
                 href="#"
                 className="hover:text-corporate-light transition-colors"
