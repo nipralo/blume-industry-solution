@@ -98,7 +98,7 @@ const BlumeSpace = () => {
                 Blume Space isn’t just another property management platform, it’s
                 a transformative digital experience built for transparency,
                 control, and convenience in the UAE residential real estate
-                sector. Whether you’re a tenant, landlord, real estate developer
+                sector. Whether you’re a landlord, tenant, real estate developer
                 or a property manager, Blume Space empowers you with tools that
                 simplify operations and elevate trust.
               </p>
